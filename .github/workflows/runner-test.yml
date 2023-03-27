@@ -23,5 +23,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: tf-version
-        run: terrafomr --version
+        run: terraform --version
       
