@@ -24,4 +24,6 @@ jobs:
     steps:
       - name: tf-version
         run: terraform --version
+      - name: aws-cli-test
+        run: aws configure
       
