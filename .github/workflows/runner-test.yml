@@ -1,0 +1,22 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - master
+      
+jobs:
+  test-inbuild-runner-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello-world
+        run: echo "Hello World!"
+        
+      - name: java-version
+        run: java --version
+      
+      - name: maven-version
+        run: mvn --version
+        
+      - name: python-version
+        run: python --version
