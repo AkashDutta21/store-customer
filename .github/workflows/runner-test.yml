@@ -2,6 +2,7 @@ name: Test
 
 on:
   workflow_dispatch:
+  push:
       
 jobs:
   test-inbuild-runner-ubuntu:
@@ -25,5 +26,5 @@ jobs:
       - name: tf-version
         run: terraform --version
       - name: aws-cli-test
-        run: aws configure
+        run: aws --version
       
