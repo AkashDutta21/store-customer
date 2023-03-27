@@ -18,3 +18,10 @@ jobs:
         
       - name: python-version
         run: python --version
+        
+  test-tf-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: tf-version
+        run: terrafomr --version
+      
